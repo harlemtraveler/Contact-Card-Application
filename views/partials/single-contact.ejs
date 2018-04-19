@@ -1,0 +1,11 @@
+<div class="contact-container">
+  <h2>Quote: <%= contact.id %></h2>
+  <p>"<%= contact.lname %>"</p>
+  <div class="contact-info">
+    ~<%= quote.email %>
+    ~<%= contact.phone %>
+  </div>
+</div>
+<form action="/contacts/<%= contact.id %>?_method=DELETE" method="post">
+  <button type="submit" name="button">Delete contact</button>
+</form>
