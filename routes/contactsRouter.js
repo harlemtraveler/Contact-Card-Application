@@ -11,6 +11,16 @@ function sendError(err, req, res, next) {
 };
 
 contactsRouter.route('/')
-.get(contactsController.getAll, contactsViewController.sendContacts, sendError);
+.get(contactsController.getAll, contactsViewController.sendContacts, sendError)
+.post(contactsController.create, contactsViewController.sendCreateContact)
+
+contactsRouter.route('/new')
+.get(contactsViewController.sendNewContact, contactsViewController.sendCreateContact)
+
+contactsRouter.route('/:id')
+.get(contactsController.getOne, contactsViewController.sendOneContact, sendError)
+
+contactsRouter.route('/:id/edit')
+.get(contactsController.getOne, contactsController.update, contactsViewController.sendUpdateContact)
 
 module.exports = contactsRouter;

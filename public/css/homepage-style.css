@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  background-image: url("../img/iphone-background-img.jpg");
+  background-position: 50% 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+<% include ../partials/boilerplate %>
+
+<% contact.forEach((contact) => { %>
+<!-- <div class="contacts">
+  <a href="/contacts/<%=contact.id%>"><h1><%=contacts.fname%><%=contacts.lname%></h1></a>
+</div> -->
+<%= JSON.stringify(contact) %>
+<% }) %>
+
+<% include ../partials/end %>
