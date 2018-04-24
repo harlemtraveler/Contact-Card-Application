@@ -17,6 +17,10 @@ contactsRouter.route('/')
 contactsRouter.route('/new')
 .get(contactsViewController.sendNewContact, contactsViewController.sendCreateContact)
 
+// contactsRouter.route('/message')
+// .get(contactsViewController.sendNewText,)
+// .post(contactsController.text, contactsViewController.sendContacts)
+
 contactsRouter.route('/:id')
 .get(contactsController.getOne, contactsViewController.sendOneContact, sendError)
 

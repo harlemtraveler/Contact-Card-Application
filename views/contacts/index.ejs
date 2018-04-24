@@ -1,5 +1,4 @@
 <% include ../partials/boilerplate %>
-<h2>Howdy</h2>
 <div class="contact-list">
 
 <% contact.forEach((contact) => { %>
@@ -8,13 +7,20 @@
 </div> -->
 
 <div class="card-container">
-  <img src="https://imgur.com/xnXMJbo" alt="">
+  <!-- <img src="https://i.imgur.com/xnXMJbo.jpg" alt=""> -->
   <h2><%= contact.fname%> <%= contact.lname%></h2>
   <p><%= contact.email %></p>
   <p><%= contact.phone %></p>
-  <p><button>Contact</button></p>
+  <p><button class="contact-button" type="submit" value="/contacts/message">Contact</button></p>
 </div>
   <% }) %>
 
 </div>
+</main>
+</main>
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Twitter Logo Silhouette">Twitter Logo Silhouette</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<script type="text/javascript" src="/js/script.js">
+const button = $('.contact-button').on('click', function() {
+  window.open('/contacts/message');
+});
   <% include ../partials/end %>

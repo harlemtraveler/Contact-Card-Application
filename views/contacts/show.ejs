@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <title></title>
+    <title>Single Contact</title>
   </head>
   <body>
     <% include ../partials/nav %>
-    <div class="card-container">
-      <img src="<%= contact.img_url %>" alt="profile-picture">
-        <h3><%= contact.fname %> <%= contact.lname %></h3>
-        <br>
-        <p><%= contact.email %></p>
-        <br>
-        <p><%= contact.phone %></p>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <p><button>Message</button></p>
+    <div class="card-container single-card">
+      <img src="https://imgur.com/xnXMJbo" alt="profile-picture" style="width:100%">
+      <h3><%= contact.fname %> <%= contact.lname %></h3>
+      <br>
+      <p><%= contact.email %></p>
+      <br>
+      <p><%= contact.phone %></p>
+      <div class="logo"><a href="#"><i class="twitter"></i></a></div>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <p><button>Message</button></p>
 
     </div>
   </body>

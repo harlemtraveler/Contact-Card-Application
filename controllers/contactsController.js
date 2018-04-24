@@ -10,6 +10,18 @@ function getAll(req, res, next) {
     });
 }
 
+// function text(req, res) {
+//   //contactsDb.getOneContact(req.params.id)
+//   contactsDb.sendTextMessage();
+//     // .then(data => {
+//     //   sendTextMessage(data.phone);
+//     //   next();
+//     // }).catch(err => {
+//     //   next(err);
+//     // });
+//   next();
+// }
+
 function getOne(req, res, next) {
   contactsDb.getOneContact(req.params.id)
     .then(data => {
@@ -52,6 +64,7 @@ function destroy(req, res) {
 
 module.exports = {
   getAll: getAll,
+  // text: text,
   getOne: getOne,
   create: create,
   update: update,

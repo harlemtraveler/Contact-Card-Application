@@ -48,10 +48,20 @@ function destroyContact(id) {
   return queryPromise;
 }
 
+// function sendTextMessage() {
+//   client.messages.create({
+//       body: 'Hello from Node',
+//       to: '+19174945822',  // Text this number
+//       from: '15182557760 ' // From a valid Twilio number
+//   })
+//   .then((message) => console.log(message.sid));
+// };
+
 module.exports = {
   getAllContacts: getAllContacts,
   getOneContact: getOneContact,
   createContact: createContact,
   updateContact: updateContact,
-  destroyContact: destroyContact
+  destroyContact: destroyContact,
+  // sendTextMessage: sendTextMessage
 };

@@ -17,7 +17,7 @@ function sendCreateContact(req, res) {
 }
 
 function sendNewContact(req, res) {
-  res.render('contacts/new')
+  res.render('contacts/new');
 }
 
 function sendUpdateContact(req, res) {
@@ -26,10 +26,15 @@ function sendUpdateContact(req, res) {
   })
 }
 
+function sendNewText(req, res) {
+  res.render('contacts/message');
+}
+
 module.exports = {
   sendContacts,
   sendOneContact,
   sendCreateContact,
   sendNewContact,
-  sendUpdateContact
+  sendUpdateContact,
+  sendNewText
 };

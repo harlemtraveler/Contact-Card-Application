@@ -1,0 +1,15 @@
+<% include ../partials/boilerplate %>
+
+<div class="message-page">
+  <form class="message-form" action="/contacts/message" method="post">
+    <div class="form-header-container">
+      <div class="message-form-icon"></div>
+      <div class="form-title-container"><h2 class="form-title">Send a Message</h2></div>
+    </div>
+
+    <div class=""><input type="text" name="message-body" placeholder="Type message here..."></div>
+    <div class=""><input class="submit-button" type="submit" value="Send Message >"></div>
+  </form>
+</div>
+
+<% include ../partials/end %>
