@@ -1,4 +1,4 @@
-\c contacts_db
+-- \c contacts_db
 
 DELETE FROM contacts;
 

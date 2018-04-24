@@ -1,4 +1,4 @@
-\c contacts_db
+-- \c contacts_db
 
 DROP TABLE IF EXISTS contacts;
 
