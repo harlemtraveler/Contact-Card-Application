@@ -75,6 +75,7 @@ input {
   max-width: 300px;
   margin: auto;
   text-align: center;
+  margin-top: 20px;
 }
 
 .single-card {
@@ -144,16 +145,23 @@ input {
 
 .input-email {
   border: 0 1px 0 1px solid #E5E5E4;
+  width: 350px;
 }
 
 .input-phone {
   border: 0 1px 0 1px solid #E5E5E4;
+  width: 350px;
 }
 
 .input-img {
   border: 0 1px 1px 1px solid #E5E5E4;
+  width: 350px;
 }
 
 .submit-button {
+  width: 375px;
+}
 
+img {
+  width: 300px;
 }

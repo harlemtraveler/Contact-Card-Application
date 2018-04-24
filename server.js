@@ -40,7 +40,7 @@ app.get('/', (req,res) => {
 
 app.use('/contacts', contactsRouter);
 
-app.get('/contacts/message', (req, res) => {
+app.get('/message', (req, res) => {
   sendTextMessage();
 });
 
